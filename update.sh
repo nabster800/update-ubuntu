@@ -4,6 +4,7 @@
 sudo apt update
 sudo apt upgrade -y
 # Добавление репозиториев
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" -y
 sudo add-apt-repository ppa:appgrid/stable -y
 sudo add-apt-repository ppa:atareao/telegram -y
 sudo add-apt-repository ppa:damien-moore/ppa -y
@@ -26,7 +27,9 @@ sudo apt-key add - < Release.key
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer  aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme plank -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer  aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools -y
+# Установка тем
+sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme -y
 # Обновления кеша тем
 for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
 for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
