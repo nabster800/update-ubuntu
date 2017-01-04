@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:webupd8team/atom -y
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer  aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer  aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree arc-icons faba-icon-theme faba-icon-theme moka-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-icon-theme paper-cursor-theme paper-cursor-theme -y
 # Мультимедиа и кодеки
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
 # Отключить отчёты о сбоях в системе
