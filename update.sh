@@ -35,6 +35,7 @@ for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
 for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
 # Мультимедиа и кодеки
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
+sudo apt remove ttf-mscorefonts-installer -y
 # Отключить отчёты о сбоях в системе
 sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
 # Обновление системы
