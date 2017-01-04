@@ -27,7 +27,7 @@ sudo apt-key add - < Release.key
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome -y
 # Установка тем
 sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme -y
 # Обновления кеша тем
