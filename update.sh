@@ -21,15 +21,17 @@ sudo add-apt-repository ppa:team-xbmc/ppa -y
 sudo add-apt-repository ppa:teejee2008/ppa -y
 sudo add-apt-repository ppa:tista/adapta -y
 sudo add-apt-repository ppa:webupd8team/atom -y
+sudo add-apt-repository ppa:nemh/systemback -y
+sudo add-apt-repository ppa:ravefinity-project/ppa -y
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list" -y
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
 sudo apt-key add - < Release.key
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik appgrid gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome systemback inxi -y
 # Установка тем
-sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme -y
+sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme vivacious-colors -y
 # Обновления кеша тем
 for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
 for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
