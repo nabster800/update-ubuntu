@@ -84,6 +84,12 @@ Krusader
 
 Skype
 
+systemback
+
+inxi
+
+neofetch
+
 # Установка оформления
 
 arc-theme
@@ -99,3 +105,7 @@ paper-gtk-theme
 paper-icon-theme
 
 paper-cursor-theme
+
+vivacious-colors
+
+adapta-gtk-theme
