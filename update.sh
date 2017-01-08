@@ -1,5 +1,5 @@
 #!/bin/bash
-# Настройка Ubuntu после уставновки
+# Настройка Ubuntu 16.04 LTS после уставновки
 # Обновление системы
 sudo apt update
 sudo apt upgrade -y
@@ -27,10 +27,12 @@ sudo add-apt-repository ppa:gerardpuig/ppa -y
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list" -y
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
 sudo apt-key add - < Release.key
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome systemback inxi neofetch ubuntu-cleaner -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome systemback inxi neofetch ubuntu-cleaner meld spotify-client -y
 # Установка тем
 sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme vivacious-colors adapta-gtk-theme -y
 # Обновления кеша тем
@@ -44,6 +46,8 @@ sudo apt update
 sudo apt upgrade -y
 # Отключить отчёты о сбоях в системе
 sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
+# Информация о системе (Файл будет перезаписан)
+echo 'neofetch' > ./.bashrc
 # Очистка системы
 sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get install -f
 
