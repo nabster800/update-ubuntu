@@ -1,10 +1,11 @@
 #!/bin/bash
 # Настройка Ubuntu 16.04 LTS после уставновки
+# Отключить отчёты о сбоях в системе
+sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
 # Обновление системы
 sudo apt update
 sudo apt upgrade -y
 # Добавление репозиториев
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" -y
 sudo add-apt-repository ppa:atareao/telegram -y
 sudo add-apt-repository ppa:damien-moore/ppa -y
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
@@ -14,7 +15,6 @@ sudo add-apt-repository ppa:libreoffice/ppa -y
 sudo add-apt-repository ppa:noobslab/apps -y
 sudo add-apt-repository ppa:noobslab/icons -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y
 sudo add-apt-repository ppa:snwh/pulp -y
 sudo add-apt-repository ppa:team-xbmc/ppa -y
 sudo add-apt-repository ppa:teejee2008/ppa -y
@@ -32,22 +32,20 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools skype language-selector-gnome systemback inxi neofetch ubuntu-cleaner meld spotify-client -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools language-selector-gnome systemback inxi neofetch ubuntu-cleaner meld spotify-client -y
 # Установка тем
 sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme vivacious-colors adapta-gtk-theme -y
-# Обновления кеша тем
-for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
-for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
 # Мультимедиа и кодеки
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
 sudo apt remove ttf-mscorefonts-installer -y
+# Информация о системе (Файл будет перезаписан)
+echo 'neofetch' > ./.bashrc
 # Обновление системы
 sudo apt update
 sudo apt upgrade -y
-# Отключить отчёты о сбоях в системе
-sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
-# Информация о системе (Файл будет перезаписан)
-echo 'neofetch' > ./.bashrc
+# Обновления кеша тем
+for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
+for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
 # Очистка системы
 sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get install -f
 
