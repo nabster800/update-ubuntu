@@ -39,7 +39,7 @@ sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
 sudo apt remove ttf-mscorefonts-installer -y
 # Информация о системе (Файл будет перезаписан)
-echo 'neofetch' > ./.bashrc
+echo 'neofetch' > ~/.bashrc
 # Обновление системы
 sudo apt update
 sudo apt upgrade -y
