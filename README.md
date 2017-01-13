@@ -25,7 +25,6 @@
 * Obs-studio
 * Grub-customizer
 * Aptik
-* Appgrid
 * Gimp
 * Qelectrotech
 * Filezilla
@@ -43,6 +42,9 @@
 * systemback
 * inxi
 * neofetch
+* ubuntu-cleaner
+* meld
+* spotify
 
 # Установка оформления
 * arc-theme
