@@ -38,7 +38,6 @@
 * Plank
 * Vlc
 * Krusader
-* Skype
 * systemback
 * inxi
 * neofetch
