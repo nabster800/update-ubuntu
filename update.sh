@@ -47,5 +47,7 @@ sudo apt upgrade -y
 for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
 for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
 # Очистка системы
-sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get install -f
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+sudo apt-get install -y -f
 
