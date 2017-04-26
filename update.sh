@@ -42,7 +42,7 @@ echo 'neofetch' > ~/.bashrc
 sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
-# Обновления кеша тем
+# Обновления кеша иконок
 for d in ~/.icons/*; do gtk-update-icon-cache -f $d; done
 for d in /usr/share/icons/*; do sudo gtk-update-icon-cache -f $d; done
 # Очистка системы
