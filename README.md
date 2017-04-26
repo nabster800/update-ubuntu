@@ -17,7 +17,6 @@
 * GDebi
 * Gradio
 * Timeshift
-* Kodi
 * Kdenlive
 * Openshot
 * Audacious
@@ -38,7 +37,6 @@
 * Plank
 * Vlc
 * Krusader
-* systemback
 * inxi
 * neofetch
 * ubuntu-cleaner
