@@ -16,11 +16,9 @@ sudo add-apt-repository ppa:noobslab/apps -y
 sudo add-apt-repository ppa:noobslab/icons -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo add-apt-repository ppa:snwh/pulp -y
-sudo add-apt-repository ppa:team-xbmc/ppa -y
 sudo add-apt-repository ppa:teejee2008/ppa -y
 sudo add-apt-repository ppa:tista/adapta -y
 sudo add-apt-repository ppa:webupd8team/atom -y
-sudo add-apt-repository ppa:nemh/systemback -y
 sudo add-apt-repository ppa:ravefinity-project/ppa -y
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo add-apt-repository ppa:gerardpuig/ppa -y
@@ -32,7 +30,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 # Обновление системы после подключения репозиториев
 sudo apt update
 # Установка программ
-sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kodi kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools language-selector-gnome systemback inxi neofetch ubuntu-cleaner meld spotify-client -y
+sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift kdenlive openshot audacious audacity obs-studio grub-customizer aptik gimp qelectrotech filezilla atom htop unetbootin virtualbox mc synaptic cherrytree plank vlc krusader gnome-system-tools language-selector-gnome inxi neofetch ubuntu-cleaner meld spotify-client -y
 # Установка тем
 sudo apt install arc-icons faba-icon-theme moka-icon-theme paper-gtk-theme paper-icon-theme paper-cursor-theme arc-theme vivacious-colors adapta-gtk-theme -y
 # Мультимедиа и кодеки
