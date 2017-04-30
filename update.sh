@@ -2,6 +2,8 @@
 # Настройка Ubuntu 16.04 LTS после уставновки
 # Отключить отчёты о сбоях в системе
 sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
+# Боремся с ошибками Gtk-WARNING **: cannot open display: :0
+xhost +local:
 # Обновление системы
 sudo apt update
 sudo apt upgrade -y
@@ -12,6 +14,7 @@ sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
 sudo add-apt-repository ppa:docky-core/stable -y
 sudo add-apt-repository ppa:haecker-felix/gradio-daily -y
 sudo add-apt-repository ppa:libreoffice/ppa -y
+sudo add-apt-repository ppa:noobslab/themes -y
 sudo add-apt-repository ppa:noobslab/apps -y
 sudo add-apt-repository ppa:noobslab/icons -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
