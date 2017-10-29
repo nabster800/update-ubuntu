@@ -1,4 +1,4 @@
-# Ubuntu 16.04 LTS
+# Ubuntu 17.10
 
 # Установка
 * git clone https://github.com/nabster800/update-ubuntu.git
@@ -12,47 +12,38 @@
 # Добавление репозиториев
 
 # Установка программ
-* Telegram
-* Psensor
-* GDebi
-* Gradio
-* Timeshift
-* Kdenlive
-* Openshot
-* Audacious
-* Audacity
-* Obs-studio
-* Grub-customizer
-* Aptik
-* Gimp
-* Qelectrotech
-* Filezilla
-* Atom
-* Htop
-* Unetbootin
-* Virtualbox
-* MC
-* Synaptic
-* Cherrytree
-* Plank
-* Vlc
-* Krusader
-* inxi
-* neofetch
-* ubuntu-cleaner
-* meld
-* spotify
+telegram
+lm-sensors
+hddtemp
+psensor
+gdebi
+gradio
+timeshift
+openshot
+audacious
+audacity
+obs-studio
+grub-customizer
+gimp
+qelectrotech
+filezilla
+atom
+htopvirtualbox
+mc
+synaptic
+cherrytree
+vlc
+gnome-tweak-tool
+gnome-system-tools
+language-selector-gnome
+inxi
+neofetch
+ubuntu-cleaner
+meld
+openjdk-9-jdk 
 
 # Установка оформления
-* arc-theme
-* arc-icons
-* faba-icon-theme
-* moka-icon-theme
-* paper-gtk-theme
-* paper-icon-theme
-* paper-cursor-theme
-* vivacious-colors
-* adapta-gtk-theme
+matcha-theme
 
 # Обновления кеша тем
 
