@@ -28,19 +28,19 @@ gimp
 qelectrotech
 filezilla
 atom
-htopvirtualbox
+htop
+virtualbox
 mc
 synaptic
 cherrytree
 vlc
 gnome-tweak-tool
 gnome-system-tools
-language-selector-gnome
 inxi
 neofetch
 ubuntu-cleaner
 meld
-openjdk-9-jdk 
+default-jdk
 
 # Установка оформления
 matcha-theme
