@@ -9,6 +9,7 @@ sudo add-apt-repository ppa:gerardpuig/ppa -y
 sudo apt-get update
 sudo apt install telegram lm-sensors hddtemp psensor gdebi gradio timeshift openshot audacious audacity obs-studio grub-customizer gimp qelectrotech filezilla atom htop virtualbox mc synaptic cherrytree vlc gnome-tweak-tool gnome-system-tools inxi neofetch ubuntu-cleaner meld default-jdk -y
 
+echo 'neofetch' > ~/.bashrc
 
 echo "################################################################"
 echo "###################   Программы установлены !  #################"
