@@ -1,4 +1,4 @@
-# Ubuntu 17.10
+# Ubuntu 18.04
 
 # Установка
 * git clone https://github.com/nabster800/update-ubuntu.git
